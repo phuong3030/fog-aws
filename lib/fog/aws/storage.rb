@@ -270,7 +270,7 @@ module Fog
           path     = '/' + path if path[0..0] != '/'
 
           if params[:bucket_name]
-            bucket_name = params[:bucket_name]
+            bucket_name = params[:bucket_name][0]
 
             if params[:bucket_cname]
               host = bucket_name
